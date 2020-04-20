@@ -1,0 +1,357 @@
+/*propriete of basic */
+	
+	@font-face 
+		{font-family:'times new roman''arial black''roboto''comic sans ms';
+			src: url('quadranta.eot');
+			src: url('quadranta.otf') format('truetype'),
+		     url('quadranta.woff') format('woff'),
+		     url('quadranta.eot?#iefix') format('embedded-opentype'),
+		     url('quadranta.svg#QuadrantaBold') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+
+
+	html 
+		{
+			
+			margin:0em;
+			padding-right:10em;
+			padding-left: 10em;
+			padding-bottom: all;
+
+		}
+
+		.container
+		{	border:solid 2px green ;
+			width: 100%;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+
+		}
+
+
+
+/*section left*/
+    #left
+	{
+		background-color:#118C76;
+		padding-top:2%;	
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+
+
+	}
+
+	 .text ,.contact
+	{
+	 color: black ;
+	 font-size: 20px;
+	 display: flex;
+	 flex-direction: column;
+	 padding-left: 1em;
+	 padding-right: 1em;
+	}
+
+	img
+	{
+		clip-path: circle(39%);
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom:12%;
+	}
+
+	.mail
+	{   
+		
+		text-decoration: none;
+		color:black;
+		padding-bottom: 5em;
+
+	}
+
+	h4
+	{	
+		
+		text-align: center;
+		background-color:#F2BB16 ;
+		color: #118C76;
+		font-size: 25px;
+		letter-spacing: 3px;
+
+	}
+
+	.icon
+	{
+		color:#F2BB16;
+		display: flex;
+		justify-content: space-around;
+		font-size: 4em;
+		vertical-align: center;	
+		padding-top: 10%;	 
+	}
+
+	.loisir
+	{
+		padding-top: 250%;
+		
+	}
+
+	
+/*section top of page with name */
+
+	
+
+	.trait
+	{
+		text-decoration: underline;
+		text-decoration-color:#118C76;
+		text-underline-position: under;
+	}
+	
+	.nom
+	{
+		color:#118C76;
+	}
+
+	#right h1
+	{
+		font-size: 50px;
+	}
+
+	#right h3
+	{
+		font-size: 40px;
+	}
+
+	
+
+
+/*section right with a body */
+
+	/*help for see a table structuration:
+	table, td ,li{border: solid}*/
+	
+	li
+	{	
+		font-size: 20px;
+		list-style-type:none;
+
+		
+	}
+
+	td
+	{
+		
+		width: 3%;
+		vertical-align:top;
+		padding-top: 5%;
+
+	}
+
+	#formation li  
+	{
+		padding-right:92px; 
+
+	}
+
+	#right
+	{
+		display: flex;
+		flex-direction: column;
+		width:100%;
+		padding-right: 3%;
+		padding-left: 5%;
+		padding-top: 8%;
+
+	}
+
+	p
+	{
+		font-size: 20px;
+	}
+
+	hr
+	{	
+		width: 100%;
+		border: solid;
+		background-color:#118C76;
+		padding-bottom: 3px;
+	}
+
+	#formation
+	{
+		padding-top:10%;
+	}
+
+	
+	#experience td
+
+	#experience h2,#formation h2,#recommendation h2
+	{
+		font-size: 30px;
+	}
+
+	#experience h3,#formation h3
+	{
+		font-size: 25px;
+	}
+
+
+	
+
+/*puce and icons body */
+
+	.fa-circle
+	{
+		color: #118C76;
+		font-size: 10px;
+		vertical-align: middle;
+		padding-right: 10px;	
+	}
+
+	.fa-dot-circle
+	{
+		color: #118C76;
+		font-size: 15px;
+		vertical-align: middle;
+		padding-right: 10px;
+	}
+
+	.fa-graduation-cap, .fa-desktop , .fa-address-book
+	{
+		padding-right: 4%; 
+		font-size: 1em;
+		color: #118C76;
+
+	}
+
+
+	#recommendation td
+	{
+		font-size: 20px;
+
+	}
+
+	.recommendation .recomendation2
+	{	
+		
+		display: flex;
+		justify-content: space-between;
+
+	}
+	
+	#recommendation span 
+	{
+		font-weight:bold;
+	}
+	
+	
+
+/*partie responsive*/
+
+@media all and (min-width: 310px) and (max-width:768px)
+
+{	
+	
+	html
+	{
+		padding:0px;
+		background-color:#A9A594;
+		margin: 0;
+	}
+	
+	.container
+	{
+		border:none;
+		flex-direction: column; 
+		background-color:#A9A594;
+
+	}
+
+	#left 
+	{
+		background-color:#A9A594;
+		width: 100%;
+		text-align: center;
+
+	}
+
+	.mail
+	{   
+		
+		text-decoration: none;
+		color:black;
+		padding-bottom: 0;
+
+	}
+
+	#right
+	{
+		display: flex;
+		flex-direction: column;
+		border: none;
+		background-color:#A9A594;
+		width:100%;
+		
+	}
+
+	#formation li
+	{
+		width: 2%;
+		padding-right:15px;
+
+		
+
+	}
+
+	.fa-graduation-cap, .fa-desktop , .fa-address-book
+	{
+		color:#F2BB16;
+		vertical-align: middle;
+
+
+	}
+
+	.nom
+	{
+		color:#F2BB16;
+	}
+
+	.fa-circle
+	{
+		color: #F2BB16;
+		font-size: 10px;
+		vertical-align: baseline;
+		padding-right: 10px;	
+	}
+
+	.fa-dot-circle
+	{
+		color: #F2BB16;
+		font-size: 15px;
+		vertical-align: baseline;
+		padding-right: 10px;
+	}
+	
+	.col-4 br
+
+	{
+		display: none;
+	}
+
+	
+
+
+
+
+	
+	
+
+}
+
+

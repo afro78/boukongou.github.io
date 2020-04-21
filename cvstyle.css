@@ -153,11 +153,7 @@
 
 	}
 
-	#formation li  
-	{
-		padding-right:92px; 
-
-	}
+	
 
 	#right
 	{
@@ -189,7 +185,7 @@
 	}
 
 	
-	#experience td
+	
 
 	#experience h2,#formation h2,#recommendation h2
 	{
@@ -263,6 +259,7 @@
 		padding:0px;
 		background-color:#A9A594;
 		margin: 0;
+		font-size: none;
 	}
 	
 	.container
@@ -270,7 +267,24 @@
 		border:none;
 		flex-direction: column; 
 		background-color:#A9A594;
+		column-width: auto;
 
+	}
+
+	.loisir
+	{
+		padding-top: 0%;
+	}
+
+	h4
+	{
+		text-align: justify-all;
+	}
+
+	li
+	{
+		padding-right: 20px;
+		justify-content: flex-start;
 	}
 
 	#left 
